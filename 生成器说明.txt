@@ -1,0 +1,7 @@
+
+把数据库字段生成html表格文档供查看。
+
+http://blog.sina.com.cn/s/blog_4c197d4201019ci3.html
+
+
+把数据库字段生成model，查询语句

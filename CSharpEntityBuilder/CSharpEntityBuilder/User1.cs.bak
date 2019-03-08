@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+
+namespace Test
+{
+    [Serializable]
+    [Table("Product")]
+    public class User1
+    {
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "int"), Key, MaxLength(11), Required]
+        public int UserId { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "string"), Key, MaxLength(11), Required]
+        public string UserName { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "string"), Key, MaxLength(11), Required]
+        public string Phone { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "int"), Key, MaxLength(11), Required]
+        public sbyte Source { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "int"), Key, MaxLength(11), Required]
+        public string Pwd { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "datetime")]
+        public DateTime? CreateTime { get; set; }
+
+        public TimeSpan ts { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "int"), Key, MaxLength(11)]
+        public int? Createby { get; set; }
+
+        /// <summary>
+        /// 说明
+        /// </summary>
+        [Column("user_id", TypeName = "int"), Key, MaxLength(11), Required]
+        public int Status { get; set; }
+    }
+}

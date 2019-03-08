@@ -1,0 +1,2 @@
+SELECT SQL_CALC_FOUND_ROWS * FROM tbl_name WHERE id > 100 LIMIT 10;
+SELECT FOUND_ROWS();  #该语句可查询出上一条sql不带limit的总条数
